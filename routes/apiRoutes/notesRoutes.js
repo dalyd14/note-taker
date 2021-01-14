@@ -1,11 +1,10 @@
 const notes = require('../../db/db.json')
-const { createNewNote, checkNote } = require('../../lib/noteFunctions')
+const { createNewNote,removeNote, checkNote } = require('../../lib/noteFunctions')
 const router = require('express').Router()
 
 
 router.get('/notes', (req, res) => {
     const notesDB = notes
-
     res.json(notesDB)
 })
 
@@ -21,8 +20,11 @@ router.post('/notes', (req, res) => {
     }
 })
 
-router.delete('/notes', (req, res) => {
-    
+router.delete('/notes/:id', (req, res) => {
+    const noteID = parseInt(req.params.id)
+    const notesDB = notes
+    removeNote(noteID, notesDB)
+    res.send("The note was deleted.")
 })
 
 module.exports = router

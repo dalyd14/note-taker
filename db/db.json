@@ -1,47 +1,17 @@
 [
   {
-    "title": "vacuum",
-    "text": "vacuum the floor",
+    "title": "Pack",
+    "text": "I need to pack some things",
     "id": 1
   },
   {
-    "title": "do dishes",
-    "text": "do the dishes in the sink",
+    "title": "Do dishes",
+    "text": "Do the dishes",
     "id": 2
   },
   {
-    "title": "make bed",
-    "text": "make the bed in the morning",
+    "title": "Eat dinner",
+    "text": "eat sromboli",
     "id": 3
-  },
-  {
-    "title": "Make lunch",
-    "text": "make lunch, maybe leftovers",
-    "id": 4
-  },
-  {
-    "title": "pack things",
-    "text": "pack some of my things",
-    "id": 5
-  },
-  {
-    "title": "Check email",
-    "text": "see if i got emails",
-    "id": 6
-  },
-  {
-    "title": "apply to jobs",
-    "text": "submit some applications",
-    "id": 7
-  },
-  {
-    "title": "do something",
-    "text": "doesnt matter anymore",
-    "id": 8
-  },
-  {
-    "title": "dwaw",
-    "text": "daeaew",
-    "id": 9
   }
 ]
