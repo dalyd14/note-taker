@@ -1,5 +1,5 @@
 const notes = require('../../db/db.json')
-const { createNewNote,removeNote, checkNote } = require('../../lib/noteFunctions')
+const { createNewNote,removeNote, checkNote, createID } = require('../../lib/noteFunctions')
 const router = require('express').Router()
 
 
@@ -10,7 +10,7 @@ router.get('/notes', (req, res) => {
 
 router.post('/notes', (req, res) => {
     const notesDB = notes
-    req.body.id = notesDB.length + 1
+    req.body.id = createID()
     const newNote = req.body
 
     if (checkNote(newNote)) {
